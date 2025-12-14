@@ -1,0 +1,55 @@
+{
+  "description": "Winning strategies that have passed testing. Executor loads and trades these automatically.",
+  "updated": "2025-12-14T11:25:00.731Z",
+  "strategies": [
+    {
+      "file": "momentum/rsi-reversal.ts",
+      "symbols": [
+        "PEPE-USD",
+        "WIF-USD",
+        "LINK-USD",
+        "BCH-USD",
+        "APT-USD",
+        "INJ-USD",
+        "SEI-USD",
+        "SOL-USD",
+        "SHIB-USD",
+        "JUP-USD"
+      ],
+      "interval": 15,
+      "notes": "RSI mean-reversion works well on volatile meme coins. PEPE: 83.3% WR, 2.73% PnL, 13.06 PF"
+    },
+    {
+      "file": "momentum/ema-crossover-momentum.ts",
+      "symbols": [
+        "BTC-USD",
+        "SHIB-USD"
+      ],
+      "interval": 15,
+      "notes": "Classic EMA 9/21 crossover with RSI filter. BTC: 50% WR, 0.72 Sharpe, 6.16 PF"
+    },
+    {
+      "file": "momentum/rsi-bb-volume-confluence.ts",
+      "symbols": [
+        "DOGE-USD",
+        "ETH-USD",
+        "PEPE-USD",
+        "SEI-USD",
+        "XRP-USD"
+      ],
+      "interval": 15,
+      "notes": "RSI + BB confluence. DOGE: 66.7% WR, 0.30% PnL, 2.03 PF"
+    },
+    {
+      "file": "composite/triple-confirmation-entry.ts",
+      "symbols": [
+        "DOGE-USD",
+        "BTC-USD",
+        "ADA-USD",
+        "UNI-USD"
+      ],
+      "interval": 15,
+      "notes": "Auto-registered: 80.0% WR, 1.39% PnL"
+    }
+  ]
+}

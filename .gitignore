@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+
+# Environment & Secrets
+.env
+.env.local
+.env.production
+*.pem
+*.key
+private*.pem
+*_private.pem
+credentials.json
+secrets.json
+
+# API Keys & Config (IMPORTANT)
+**/api-key*
+**/apikey*
+**/*secret*
+
+# Trading State (regenerated)
+positions.json
+agent_state.json
+param_history.json
+temp_prompt.txt
+
+# Results & Logs (large files)
+results/*.json
+top_strategies.json
+*.log
+
+# Build
+dist/
+*.js.map
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# TypeScript cache
+*.tsbuildinfo
